@@ -57,6 +57,7 @@ void updateAsync(uv_async_t* req, int status) {
     
     Local<Function> callBack = Local<Function>::New(isolate,message->callBack);
     
+    // update size 
     if(asyncMessage->window && asyncMessage->frame.size().height > 0 && asyncMessage->frame.size().width > 0 ) {
         cv::imshow("Preview", asyncMessage->frame);
         cv::waitKey(20);
