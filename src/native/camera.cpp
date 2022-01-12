@@ -232,6 +232,8 @@ void Open(const FunctionCallbackInfo<Value>& args) {
     args.GetReturnValue().Set(String::NewFromUtf8(isolate,"ok"));
 }
 
+// close window
+
 void Close(const FunctionCallbackInfo<Value>& args) {
     Isolate* isolate = Isolate::GetCurrent();
     HandleScope scope(isolate);
