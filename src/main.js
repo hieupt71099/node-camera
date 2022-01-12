@@ -9,7 +9,7 @@ var websocketPort = 9090,
     inputString = "",
     height = 360;
 
-//Gathering Arguments
+//Gathering Argument
 process.argv.forEach(function (val, index, array) {
     switch (val) {
     case "-open":
