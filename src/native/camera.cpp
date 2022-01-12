@@ -254,6 +254,8 @@ void init(Handle<Object> exports) {
     exports->Set(String::NewFromUtf8(isolate,"GetPreviewSize"), FunctionTemplate::New(isolate,GetPreviewSize)->GetFunction());
 }
 
+// init string value
+
 std::string stringValue(Local<Value> value) {
     if(value->IsString()){
         //Alloc #1
