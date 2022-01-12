@@ -260,7 +260,6 @@ void init(Handle<Object> exports) {
 }
 
 // init string value
-
 std::string stringValue(Local<Value> value) {
     if(value->IsString()){
         //Alloc #1
