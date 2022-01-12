@@ -136,7 +136,7 @@ void CameraOpen(uv_work_t* req) {
     tmp.release();
     
 }
-
+// close camera
 void CameraClose(uv_work_t* req, int status) {
     Isolate* isolate = Isolate::GetCurrent();
     HandleScope scope(isolate);
