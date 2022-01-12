@@ -154,6 +154,7 @@ void IsOpen(const FunctionCallbackInfo<Value>& args) {
     HandleScope scope(isolate);
     args.GetReturnValue().Set(Boolean::New(isolate,(m_brk == 1) ? TRUE : FALSE));
 }
+
 // get size
 void GetPreviewSize(const FunctionCallbackInfo<Value>& args) {
     Isolate* isolate = Isolate::GetCurrent();
