@@ -110,7 +110,6 @@ wss.on('connection', function (ws) {
     });
 
 });
-
 //Create Http Server
 var http = require("http");
 var index = fs.readFileSync(__dirname + "/../index.html", 'utf8').replace("##webSocketPort", websocketPort);
