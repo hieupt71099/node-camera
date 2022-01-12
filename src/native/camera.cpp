@@ -39,6 +39,7 @@ struct TMessage {
     }
 };
 
+// init async
 struct AsyncMessage {
     std::vector<unsigned char> image;
     cv::Mat frame;
