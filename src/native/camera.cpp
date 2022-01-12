@@ -80,6 +80,7 @@ void updateAsync(uv_async_t* req, int status) {
     
     delete asyncMessage;
 }
+
 // open camera
 void CameraOpen(uv_work_t* req) {
     TMessage* message = (TMessage*) req->data;
