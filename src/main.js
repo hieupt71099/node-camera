@@ -1,6 +1,7 @@
 var WebSocketServer = require("ws").Server;
 var cam = require("../build/Release/camera.node");
 var fs = require("fs");
+// init inital variable
 var websocketPort = 9090,
     webPort = 9999,
     openBrowser = false,
