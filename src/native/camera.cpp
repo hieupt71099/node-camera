@@ -25,7 +25,7 @@ int m_brk;
 int32_t preview_width, preview_height;
 uv_async_t async;
 uv_loop_t *loop;
-
+// init datatype
 struct TMessage {
     Persistent<Function> callBack;
     cv::VideoCapture *capture;
