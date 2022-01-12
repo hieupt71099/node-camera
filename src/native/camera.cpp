@@ -160,7 +160,7 @@ void GetPreviewSize(const FunctionCallbackInfo<Value>& args) {
     obj->Set(String::NewFromUtf8(isolate,"height"), Integer::New(isolate,preview_height));
     args.GetReturnValue().Set(obj);
 }
-
+// main function open the window cam
 void Open(const FunctionCallbackInfo<Value>& args) {
     Isolate* isolate = Isolate::GetCurrent();
     HandleScope scope(isolate);
